@@ -24,7 +24,7 @@
     }
 
     .logo {
-      width: 120px; /* ajuster la taille ici */
+      width: 120px;
       height: auto;
       display: block;
     }
@@ -107,6 +107,25 @@
       color: black;
     }
 
+    /* Share image container */
+    .share {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: transparent;
+    }
+
+    .share img {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
     /* Responsive tweaks */
     @media (max-width: 600px) {
       .site-header {
@@ -120,7 +139,8 @@
       .header-text {
         width: 100%;
       }
-    
+    }
+
   </style>
 </head>
 <body>
@@ -163,10 +183,13 @@
       <a href="#contact" class="btn">Contactez-nous</a>
     </div>
   </section>
-<div class="card">
-  <a href="https://www.facebook.com/share/v/1JWi71jbpR/?mibextid=wwXIfr" target="_blank">
- <img src="génies-en-herbe.png.jpg" alt="Partager sur Facebook" style="max-width:100%;height:auto;border:0;">
-</a>
+
+  <div class="share">
+    <a href="https://www.facebook.com/share/v/1JWi71jbpR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+      <img src="genies-en-herbe.png" alt="Partager sur Facebook">
+    </a>
+  </div>
+
   <footer id="contact">
     <h3>Contact</h3>
     <p>Téléphone : +212 537613611</p>
@@ -174,10 +197,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
-
-
