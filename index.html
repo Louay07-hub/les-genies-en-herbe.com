@@ -1,202 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Institution Les Génies en Herbe</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    /* Header layout: logo left, text right */
-    .site-header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-      background: #0077b6;
-      color: white;
-    }
-
-    .logo {
-      width: 120px;
-      height: auto;
-      display: block;
-    }
-
-    .header-text {
-      text-align: left;
-    }
-
-    .header-text h1 {
-      margin: 0;
-      font-size: 1.6rem;
-      color: #fff;
-    }
-
-    .intro {
-      max-width: 600px;
-      margin: 8px 0 0;
-      font-size: 1.05em;
-      color: rgba(255,255,255,0.95);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card h2 {
-      margin: 15px 0 5px;
-    }
-
-    .card p {
-      padding: 0 15px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 15px;
-      padding: 10px 20px;
-      background: #0077b6;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .btn:hover {
-      background: #023e8a;
-    }
-
-    footer {
-      background: #eee;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    p {
-      color: black;
-    }
-
-    h2 {
-      color: rgb(0, 0, 0);
-    }
-
-    h3 {
-      color: black;
-    }
-
-    /* Share image container */
-    .share {
+  <head>
+   <style>
+    .video {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-      background: transparent;
+      margin: 40px 0;
+      border-radius: 20px;
+      overflow: hidden;
     }
-
-    .share img {
-      max-width: 320px;
-      width: 100%;
-      height: auto;
+      .video video{
       display: block;
-      border: 0;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      width: 500px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
     }
-
-    /* Responsive tweaks */
-    @media (max-width: 600px) {
-      .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px;
-      }
-      .logo {
-        width: 100px;
-      }
-      .header-text {
-        width: 100%;
-      }
+    
+    body{
+      background-color: #f9f9f9;
     }
-
+    p{
+      font-size: 20px;
+      text-align: center;
+      color:rgb(255, 255, 255);    
+     background-color: blue;
+      width: 500px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
   </style>
-</head>
-<body>
-  <header class="site-header">
-    <img src="gennies-logo-Photoroom.png" alt="Logo Génies en Herbe" class="logo">
-    <div class="header-text">
-      <h1>Institution Les Génies en Herbe</h1>
-      <p class="intro">
-        De la maternelle au lycée, nous accompagnons chaque élève avec bienveillance, ambition et excellence.
-      </p>
-    </div>
-  </header>
-
-  <section class="grid">
-    <div class="card">
-      <img src="https://formation-petite-enfance.com/wp-content/uploads/comment-devenir-assistante-maternelle-1-300x200.jpg" alt="Maternelle">
-      <h2>Maternelle</h2>
-      <p>Un environnement doux et stimulant pour les premiers pas scolaires.</p>
-      <a href="#contact" class="btn">Contactez-nous</a>
-    </div>
-
-    <div class="card">
-      <img src="https://i.unimedias.fr/2020/04/14/eleves.jpg?auto=format%2Ccompress&crop=faces&cs=tinysrgb&fit=crop&h=501&ixlib=php-4.1.0&w=890" alt="Primaire">
-      <h2>Primaire</h2>
-      <p>Apprendre avec plaisir, développer la curiosité et les bases solides.</p>
-      <a href="#contact" class="btn">Contactez-nous</a>
-    </div>
-
-    <div class="card">
-      <img src="college.jpg" alt="Collège">
-      <h2>Collège</h2>
-      <p>Encadrer la croissance, renforcer les compétences et l’autonomie.</p>
-      <a href="#contact" class="btn">Contactez-nous</a>
-    </div>
-
-    <div class="card">
-      <img src="lycee.jpg" alt="Lycée">
-      <h2>Lycée</h2>
-      <p>Préparer l’avenir avec rigueur, ambition et accompagnement personnalisé.</p>
-      <a href="#contact" class="btn">Contactez-nous</a>
-    </div>
-  </section>
-  <div class="share">
-    <a href="https://www.facebook.com/share/v/1JWi71jbpR/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-      <img src="genies-en-herbe.png" alt="Partager sur Facebook">
-    </a>
-  </div>
-  <footer id="contact">
-    <h3>Contact</h3>
-    <p>Téléphone : +212 537613611</p>
-    <p>Adresse : 295 PLACE AL MADINA MOUNAOURA HAY ALAOUINE TEMARA</p>
-    <a src="primaire.jpg">
-  </footer>
-</body>
+    <body>
+      <div class="video">
+        <video controls width="500" height="350">
+          <source src="presentation-school.mp4" type="video/mp4">
+        </video>
+        </div>
+<p><strong><em>Presentation De la section Maternelle</em></strong></p>
+    </body>
+  </head>
 </html>
-
-
-
-
